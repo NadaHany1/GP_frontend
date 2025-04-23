@@ -1,0 +1,203 @@
+@import "../index.css";
+
+
+.sidebar {
+    width: 25%;
+    height: calc(100vh - 65px);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    position: sticky;
+    top:10vh;
+  }
+  
+  .sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .filter-section {
+    margin-bottom: 25px;
+  }
+  
+  .filter-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .filter-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .filter-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    height: 18px;
+    width: 18px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .filter-option:hover input ~ .checkmark {
+    background-color: #eee;
+  }
+  
+  .filter-option input:checked ~ .checkmark {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .filter-option input:checked ~ .checkmark:after {
+    display: block;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .option-label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .view-more {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: left;
+    padding: 5px 0;
+  }
+  
+  .view-more:hover {
+    text-decoration: underline;
+  }
+  
+  .price-range {
+    padding: 5px 0;
+  }
+  
+  .price-inputs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .price-input-group {
+    flex: 1;
+  }
+  
+  .price-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .price-input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .range-slider {
+    position: relative;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 3px;
+    margin: 20px 0;
+  }
+  
+  .range-slider input {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: none;
+    -webkit-appearance: none;
+    pointer-events: none;
+  }
+  
+  .range-slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: auto;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+  }
+  
+  .apply-filters {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .apply-filters:hover {
+    text-shadow: 0 0 3px white;
+                /* 0 0 5px white; */
+    /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      z-index: 90;
+      height: 100%;
+      transform: translateX(-100%);
+    }
+    
+    .sidebar.open {
+      transform: translateX(0);
+    }
+  }

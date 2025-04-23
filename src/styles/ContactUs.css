@@ -1,0 +1,86 @@
+/* ContactUs.css */
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  /* background-color: #f4f4f4; */
+}
+
+.contact-details {
+  width: 45%;
+  margin-left: 5%;
+  margin-top: 3%;
+
+}
+
+.contact-details p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.details-item {
+  margin-bottom: 15px;
+}
+
+.details-item h2 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.details-item p {
+  color: #c2c2c2;
+  font-size: 18px;
+}
+
+.contact-form {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0088cc;
+}
+
+.overlay {
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay .white-header {
+  color: rgb(255, 255, 255);
+}
+

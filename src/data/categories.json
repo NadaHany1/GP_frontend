@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "Electronics",
+    "image": "https://media.istockphoto.com/id/1351074783/video/sensual-woman-posing-while-sitting-on-floor.jpg?s=640x640&k=20&c=3ctr6UFlBrSwqPQzPkMd7uK7GXGINleQzUydUSpO0mg=",
+    "link": "/products/electronics"
+  },
+  {
+    "id": 2,
+    "name": "Clothing",
+    "image": "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
+    "link": "/products/clothing"
+  },
+  {
+    "id": 3,
+    "name": "Books",
+    "image": "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg",
+    "link": "/products/books"
+  },
+  {
+    "id": 4,
+    "name": "Phones",
+    "image": "https://media.istockphoto.com/id/1351074783/video/sensual-woman-posing-while-sitting-on-floor.jpg?s=640x640&k=20&c=3ctr6UFlBrSwqPQzPkMd7uK7GXGINleQzUydUSpO0mg=",
+    "link": "/products/electronics"
+  },
+  {
+    "id": 5,
+    "name": "Accessories",
+    "image": "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
+    "link": "/products/clothing"
+  },
+  {
+    "id": 6,
+    "name": "Sports",
+    "image": "https://media.istockphoto.com/id/1351074783/video/sensual-woman-posing-while-sitting-on-floor.jpg?s=640x640&k=20&c=3ctr6UFlBrSwqPQzPkMd7uK7GXGINleQzUydUSpO0mg=",
+    "link": "/products/books"
+  }
+]
+  
+  

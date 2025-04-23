@@ -1,0 +1,126 @@
+.category-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    background: #f9f9f9;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .category-container {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 60px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Hide scrollbar for all browsers */
+  .category-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .category-container {
+    -ms-overflow-style: none; /* IE and Edge */
+      /* Firefox */
+  }
+  
+  .category-card {
+    min-width: 250px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .category-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .category-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .view-link {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  .view-link:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+
+    .category-container {
+      padding: 0 20px;
+      gap: 15px;
+    }
+  
+    .category-card {
+      min-width: 100px;
+      height: 150px;
+    }
+  
+    .overlay h3 {
+      font-size: 18px;
+    }
+  }
+  

@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "name": "Tech Gadgets Supply",
+    "location": "Los Angeles, CA",
+    "coordinates": {
+      "lat": 34.0522,
+      "lng": -118.2437
+    },
+    "rating": 4.8,
+    "productCount": 37,
+    "contacts": {
+      "email": "contact@techgadgets.com",
+      "phone": "+1 (555) 123-4567",
+      "instagram": "https://instagram.com/techgadgetssupply",
+      "website": "https://techgadgetssupply.com"
+    },
+    "profileImage": "https://d2line.com/thatlook/wp-content/uploads/sites/4/2022/09/women-fashion-and-women-clothing.png",
+    "coverImage": "https://d2line.com/thatlook/wp-content/uploads/sites/4/2022/09/women-fashion-and-women-clothing.png",
+    "isProvider": true
+  }
+  

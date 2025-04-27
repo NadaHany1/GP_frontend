@@ -1,191 +1,83 @@
-import React, { useState } from "react";
-import { Modal, Button, Form, Alert, Spinner } from "react-bootstrap";
-import "../styles/AuthModals.css";
+import { useState } from "react";
+import "../styles/login.css";
+import authService from "../services/authService";
 
-function LoginModal({ show, onHide }) {
+function LoginModal({ setShowLoginModal }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [rememberMe, setRememberMe] = useState(false);
+  const [formError, setFormError] = useState("");
+  const [formSuccess, setFormSuccess] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [success, setSuccess] = useState(null);
-
-  const validateForm = () => {
-    // Basic validation
-    if (!email.trim()) {
-      setError("Email is required");
-      return false;
-    }
-    if (!password) {
-      setError("Password is required");
-      return false;
-    }
-    if (!email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
-      setError("Please enter a valid email address");
-      return false;
-    }
-    return true;
-  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError(null);
-    setSuccess(null);
+    setFormError("");
+    setFormSuccess("");
 
-    if (!validateForm()) return;
+    if (!email || !password) {
+      setFormError("Please enter both email and password");
+      return;
+    }
 
     setIsLoading(true);
 
-    try {
-      // Example API call
-      const response = await fetch("https://api.example.com/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          password,
-          rememberMe,
-        }),
-      });
+    const result = await authService.login(email, password);
 
-      const data = await response.json();
-
-      // Simulate API response
-      // In a real application, check the actual response status
-      if (response.ok) {
-        setSuccess("Login successful! Redirecting...");
-        // Store token in localStorage or cookies
-        localStorage.setItem("token", data.token);
-        
-        // Close the modal after a short delay
-        setTimeout(() => {
-          onHide();
-          // Redirect or update app state here
-          window.location.reload(); // Example: reload page
-        }, 1500);
-      } else {
-        throw new Error(data.message || "Login failed");
-      }
-    } catch (error) {
-      // For demo, simulate successful login
-      // Comment this block and uncomment the error block for real API integration
-      setSuccess("Demo: Login successful! Redirecting...");
+    if (result.success) {
+      setFormSuccess("Login successful!");
       setTimeout(() => {
-        onHide();
+        setShowLoginModal(false); // Close modal after success
       }, 1500);
-      
-      // Uncomment for real API integration:
-      // setError(error.message || "An error occurred during login");
-    } finally {
-      setIsLoading(false);
+    } else {
+      setFormError(result.error);
     }
-  };
 
-  const handleForgotPassword = () => {
-    // Implement forgot password functionality
-    alert("Forgot password feature will be implemented soon!");
+    setIsLoading(false);
   };
 
   return (
-    <Modal
-      show={show}
-      onHide={onHide}
-      centered
-      className="auth-modal"
-      backdrop="static"
-    >
-      <Modal.Header closeButton>
-        <Modal.Title>Login to InstaFinder</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        {error && <Alert variant="danger">{error}</Alert>}
-        {success && <Alert variant="success">{success}</Alert>}
-        
-        <Form onSubmit={handleLogin}>
-          <Form.Group className="mb-3">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <button
+          className="close-modal"
+          onClick={() => setShowLoginModal(false)}
+        >
+          &times;
+        </button>
+        <h2>Login</h2>
+        {formError && <div className="error-message">{formError}</div>}
+        {formSuccess && <div className="success-message">{formSuccess}</div>}
+        <form onSubmit={handleLogin}>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
               type="email"
-              placeholder="Enter your email"
+              id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              disabled={isLoading}
-              autoFocus
+              placeholder="Enter your email"
             />
-          </Form.Group>
-
-          <Form.Group className="mb-3">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <input
               type="password"
-              placeholder="Enter your password"
+              id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              disabled={isLoading}
+              placeholder="Enter your password"
             />
-          </Form.Group>
-
-          <div className="d-flex justify-content-between align-items-center mb-4">
-            <Form.Check
-              type="checkbox"
-              label="Remember me"
-              checked={rememberMe}
-              onChange={(e) => setRememberMe(e.target.checked)}
-              disabled={isLoading}
-            />
-            <Button
-              variant="link"
-              className="forgot-password"
-              onClick={handleForgotPassword}
-              disabled={isLoading}
-            >
-              Forgot Password?
-            </Button>
           </div>
-
-          <Button
-            variant="primary"
+          <button
             type="submit"
-            className="w-100 login-button"
+            className="submit-btn"
             disabled={isLoading}
           >
-            {isLoading ? (
-              <>
-                <Spinner
-                  as="span"
-                  animation="border"
-                  size="sm"
-                  role="status"
-                  aria-hidden="true"
-                />
-                <span className="ms-2">Logging in...</span>
-              </>
-            ) : (
-              "Login"
-            )}
-          </Button>
-        </Form>
-
-        <div className="text-center mt-4">
-          <p className="mb-0">
-            Don't have an account?{" "}
-            <Button
-              variant="link"
-              className="p-0 signup-link"
-              onClick={() => {
-                onHide();
-                // Open signup modal logic would go here
-                // This would be handled in the parent component
-              }}
-            >
-              Sign up
-            </Button>
-          </p>
-        </div>
-      </Modal.Body>
-    </Modal>
+            {isLoading ? "Processing..." : "Login"}
+          </button>
+        </form>
+      </div>
+    </div>
   );
 }
 

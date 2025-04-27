@@ -5,6 +5,7 @@ import SignupModal from "./SignupModal";
 import Cropper from 'react-easy-crop';
 import getCroppedImg from '../utils/cropImage'; // We'll make this utility next
 import SearchContainer from "./SearchContainer";
+import MerchantSignupModal from './MerchantSignupModal';
 
 function Navbar() {
   // State for controlling UI elements
@@ -284,6 +285,7 @@ function Navbar() {
         <div className={`nav-buttons ${isMobileMenuOpen ? 'active' : ''}`}>
           <Link to="/products"><button className="nav-btn">products</button></Link>
           <Link to="/"><button className="nav-btn">Favourites</button></Link>
+          <MerchantSignupModal/>
           <button className="nav-btn" onClick={() => setShowSignupModal(true)}>Signup</button>
           <button className="nav-btn" onClick={() => setShowLoginModal(true)}>Login</button>
         </div>

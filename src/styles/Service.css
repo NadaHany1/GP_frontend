@@ -53,7 +53,8 @@
 
 @media (max-width: 768px) {
     .service-card {
-        width: 40%;
+        /* width: 40vw; */
+        min-width: 40vw;
     }
     .service-card h3 {
         font-size: 16px;

@@ -1,159 +1,62 @@
 [
   {
     "id": 1,
-    "name": "Classic T-Shirt",
-    "price": 24.99,
-    "brand": "FashionCo",
-    "color": "Black",
-    "images": [
-      "https://media.istockphoto.com/id/1351074783/video/sensual-woman-posing-while-sitting-on-floor.jpg?s=640x640&k=20&c=3ctr6UFlBrSwqPQzPkMd7uK7GXGINleQzUydUSpO0mg=",
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": true
+    "name": "Wireless Earbuds",
+    "price": 59.99,
+    "colors": ["Black", "White", "Blue"],
+    "description": "High-quality wireless earbuds with noise cancellation",
+    "sizes": ["One Size"],
+    "brand": "SoundWave",
+    "images": ["https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?cs=srgb&dl=pexels-kowalievska-1055691.jpg&fm=jpg"],
+    "active": true,
+    "stock": 25
   },
   {
     "id": 2,
-    "name": "Denim Jeans",
+    "name": "Wireless Earbuds",
     "price": 59.99,
-    "brand": "DenimWorks",
-    "color": "Blue",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": false
+    "colors": ["Black", "White", "Blue"],
+    "description": "High-quality wireless earbuds with noise cancellation",
+    "sizes": ["One Size"],
+    "brand": "SoundWave",
+    "images": ["https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?cs=srgb&dl=pexels-kowalievska-1055691.jpg&fm=jpg"],
+    "active": true,
+    "stock": 25
   },
   {
     "id": 3,
-    "name": "Wool Sweater",
-    "price": 49.99,
-    "brand": "WinterWardrobe",
-    "color": "Grey",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": true
+    "name": "Wireless Earbuds",
+    "price": 59.99,
+    "colors": ["Black", "White", "Blue"],
+    "description": "High-quality wireless earbuds with noise cancellation",
+    "sizes": ["One Size"],
+    "brand": "SoundWave",
+    "images": ["https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?cs=srgb&dl=pexels-kowalievska-1055691.jpg&fm=jpg"],
+    "active": true,
+    "stock": 25
   },
   {
     "id": 4,
-    "name": "Summer Dress",
-    "price": 39.99,
-    "brand": "SunnyStyle",
-    "color": "Yellow",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": false
+    "name": "Wireless Earbuds",
+    "price": 59.99,
+    "colors": ["Black", "White", "Blue"],
+    "description": "High-quality wireless earbuds with noise cancellation",
+    "sizes": ["One Size"],
+    "brand": "SoundWave",
+    "images": ["https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?cs=srgb&dl=pexels-kowalievska-1055691.jpg&fm=jpg"],
+    "active": true,
+    "stock": 25
   },
   {
     "id": 5,
-    "name": "Leather Jacket",
-    "price": 149.99,
-    "brand": "UrbanEdge",
-    "color": "Brown",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": true
-  },
-  {
-    "id": 6,
-    "name": "Cotton Hoodie",
-    "price": 44.99,
-    "brand": "ComfortWear",
-    "color": "Green",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": false
-  },
-  {
-    "id": 7,
-    "name": "Pleated Skirt",
-    "price": 34.99,
-    "brand": "ClassicStyle",
-    "color": "Navy",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": true
-  },
-  {
-    "id": 8,
-    "name": "Button-up Shirt",
-    "price": 29.99,
-    "brand": "FormalFit",
-    "color": "White",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": false
-  },
-  {
-    "id": 9,
-    "name": "Sports Leggings",
-    "price": 54.99,
-    "brand": "ActiveLife",
-    "color": "Black",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": true
-  },
-  {
-    "id": 10,
-    "name": "Cargo Pants",
-    "price": 64.99,
-    "brand": "OutdoorGear",
-    "color": "Khaki",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": false
-  },
-  {
-    "id": 11,
-    "name": "Floral Blouse",
-    "price": 32.99,
-    "brand": "SpringCollection",
-    "color": "Pink",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": true
-  },
-  {
-    "id": 12,
-    "name": "Canvas Sneakers",
-    "price": 49.99,
-    "brand": "StreetStyle",
-    "color": "White",
-    "images": [
-      "https://storage.googleapis.com/amoeba-bucket-prod/www.forever21.com/1709135423737917/01261380-01.jpg",
-      "https://storage.googleapis.com/amoeba-bucket-prod/images2.productserve.com/1716972082143422/es2.productserve.com",
-      "https://storage.googleapis.com/amoeba-bucket-prod/img.shopstyle-cdn.com/1717040787581533/april-short.jpg"
-    ],
-    "isNew": false
-  }
+    "name": "Wireless Earbuds",
+    "price": 59.99,
+    "colors": ["Black", "White", "Blue"],
+    "description": "High-quality wireless earbuds with noise cancellation",
+    "sizes": ["One Size"],
+    "brand": "SoundWave",
+    "images": ["https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D", "https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?cs=srgb&dl=pexels-kowalievska-1055691.jpg&fm=jpg"],
+    "active": true,
+    "stock": 25
+  } 
 ]

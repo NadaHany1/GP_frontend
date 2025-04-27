@@ -57,14 +57,13 @@ const ProductCard = ({ product, isProvider, onUpdateClick, onToggleStatus }) => 
       </div>
       
       <div className="product-info">
-        <h3 className="product-name">{product.title}</h3>
+        <h3 className="product-name">{product.name}</h3>
         <p className="product-price">${product.price.toFixed(2)}</p>
-        {/* <div className="product-colors">
+        <div className="product-colors">
           {product.colors.map((color, index) => (
             <span key={index} className="color-badge">{color}</span>
           ))}
-        </div> */}
-        <a href="">{product.category.name}</a>
+        </div>
       </div>
     </div>
   );

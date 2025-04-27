@@ -29,7 +29,8 @@
   
   .category-card {
     min-width: 250px;
-    height: 300px;
+    width:20vw;
+    height: 50vh;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
@@ -114,11 +115,11 @@
       gap: 15px;
     }
   
-    .category-card {
+    /* .category-card {
       min-width: 100px;
       height: 150px;
     }
-  
+   */
     .overlay h3 {
       font-size: 18px;
     }

@@ -33,7 +33,7 @@
 }
 
 .contact-form {
-  width: 45%;
+  width: 45vw;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -60,7 +60,7 @@
 }
 
 .contact-form button {
-  background-color: #00aaff;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 10px;
   border: none;
@@ -84,3 +84,14 @@
   color: rgb(255, 255, 255);
 }
 
+
+@media (max-width: 768px) {
+  .contact-us{
+    flex-direction: column;
+  }
+
+  .contact-form{
+    width: 80vw;
+    align-self: center;
+  }
+}

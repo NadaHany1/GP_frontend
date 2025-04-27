@@ -3,20 +3,26 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import ProductGrid from './pages/ProductGrid';
 import Navbar from './components/Navbar';
+import Profile from './pages/Profile';
+import { AuthProvider } from './contexts/AuthContext';
 
 
 function App() {
 
   return (
-    <>
-      <Navbar/>
-      <main className="app">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<ProductGrid />} />
-        </Routes>
-      </main>
-    </>
+
+      <AuthProvider>
+        <Navbar />
+        <main className="app">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ProductGrid />} />
+            <Route path="/profile" element={<Profile />} />
+
+          </Routes>
+        </main>
+      </AuthProvider>
+
   )
 }
 

@@ -221,7 +221,8 @@ function Navbar() {
         </div>
 
         <div className="logo">
-          <Link to="/"><h1>Insta<span>Finder</span></h1></Link>
+          {/* <Link to="/"><h1>Insta<span>Finder</span></h1></Link> */}
+          <Link to="/" className="navbar-brand"><img src="/img/logo-transparent.png" alt="Logo"width={150} height={40} /></Link>
         </div>
 
         {/* <div className="search-container">
@@ -285,9 +286,10 @@ function Navbar() {
         <div className={`nav-buttons ${isMobileMenuOpen ? 'active' : ''}`}>
           <Link to="/products"><button className="nav-btn">products</button></Link>
           <Link to="/"><button className="nav-btn">Favourites</button></Link>
-          <MerchantSignupModal/>
-          <button className="nav-btn" onClick={() => setShowSignupModal(true)}>Signup</button>
+          <Link to="/merProfile"><button className="nav-btn">Profile</button></Link>
+          {/* <button className="nav-btn" onClick={() => setShowSignupModal(true)}>Signup</button> */}
           <button className="nav-btn" onClick={() => setShowLoginModal(true)}>Login</button>
+          <MerchantSignupModal/>
         </div>
       </nav>
 

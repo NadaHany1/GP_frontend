@@ -1,4 +1,5 @@
 // src/components/SearchContainer.jsx
+import "../styles/SearchContainer.css";
 
 import { useRef } from "react";
 
@@ -40,11 +41,11 @@ const SearchContainer = ({
                 </form>
             ) : (
                 <div className="search-bars">
-                    <button onClick={toggleImageSearch} className="search-btn">
-                        <i className="fas fa-image"></i> Image Search
-                    </button>
                     <button onClick={toggleTextSearch} className="search-btn">
                         <i className="fas fa-search"></i> Text Search
+                    </button>
+                    <button onClick={toggleImageSearch} className="search-btn">
+                        <i className="fas fa-image"></i> Image Search
                     </button>
                 </div>
             )}

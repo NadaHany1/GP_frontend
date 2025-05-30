@@ -64,7 +64,8 @@ const ProductCard = ({ product, isProvider, onUpdateClick, onToggleStatus }) => 
             <span key={index} className="color-badge">{color}</span>
           ))}
         </div> */}
-        <a href="">{product.category.name}</a>
+        {/* there is problem when i activate the proudct link  */}
+        {/* <a href="">{product.category.name}</a>   */}
       </div>
     </div>
   );

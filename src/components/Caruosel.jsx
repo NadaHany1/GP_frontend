@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../styles/Caruosel.css";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import SearchContainer from "./SearchContainer";
 
 
 function Caruosel() {
@@ -93,8 +94,26 @@ function Caruosel() {
     };
 
 
+
     return (
         <div className="slider">
+
+            <div className="search-overlay">
+                <SearchContainer
+                    isSearchBarActive={isSearchBarActive}
+                    searchType={searchType}
+                    searchQuery={searchQuery}
+                    setSearchType={setSearchType}
+                    setSearchQuery={setSearchQuery}
+                    handleSearch={handleSearch}
+                    setIsSearchBarActive={setIsSearchBarActive}
+                    toggleImageSearch={toggleImageSearch}
+                    toggleTextSearch={toggleTextSearch}
+                    imageInputRef={imageInputRef}
+                    handleImageSelect={handleImageSelect}
+                    isLoading={isLoading}
+                />
+            </div>
 
             <div className="list" ref={sliderRef}>
                 {[1, 2, 3, 4, 5].map((num, idx) => (

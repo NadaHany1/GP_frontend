@@ -7,6 +7,15 @@
     top: 0;                    /* Start from top */
     left: 0;
 }
+.search-overlay {
+    position: absolute;
+    top: 70%;
+    left: 81.5%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 80%;
+}
+
 
 .slider .list {
     position: absolute;
@@ -85,6 +94,14 @@
     .slider .dots li {
         margin: 5px;
     }
+    .search-overlay {
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        width: 80%;
+    }
+
 }
 
 
